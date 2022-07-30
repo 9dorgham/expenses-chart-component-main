@@ -1,6 +1,8 @@
 document.body.style.height= `${window.innerHeight}px`;
 
+// selector
 let parent = document.querySelector('.expenses');
+
 
 async function getData() {
   let url = "JS/data.json";
