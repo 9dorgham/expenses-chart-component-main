@@ -1,0 +1,133 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'DM-sans-r';
+  font-size: clamp(0.85em, 2vw, 18px);
+}
+
+:root {
+  --Sred: hsl(10, 79%, 65%);
+  --Cyan: hsl(186, 34%, 60%);
+  --Darkbrown: hsl(25, 47%, 15%);
+  --Mediumbrown: hsl(28, 10%, 53%);
+  --Cream: hsl(27, 66%, 92%);
+  --Very-pale-orange: hsl(33, 100%, 98%);
+  --pad: 1em 2em;
+  --round: 0.7em;
+}
+
+
+body {
+  background-color: var(--Cream);
+  position: relative;
+  height: 80vh;
+}
+
+
+.card {
+  width: 20em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card header {
+  background-color: var(--Sred);
+  color: var(--Very-pale-orange);
+  padding: var(--pad);
+  border-radius: var(--round);
+  position: relative;
+}
+.card header .icon {
+  width: 2.5em;
+  height: 2.5em;
+  position: absolute;
+  right: 2em;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* Done */
+
+.card main {
+  background-color: var(--Very-pale-orange);
+  margin-top: 1em;
+  border-radius: var(--round);
+  padding: var(--pad);
+}
+.card main h1 {
+  font-size: 1.2em;
+  color: var(--Darkbrown);
+  margin-bottom: 1em;
+}
+.card main .expenses {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 2em;
+  padding-top: 1em;
+  height: 7em;
+}
+.expenses .static {
+  position: relative;
+}
+.expenses .static:hover .bar {
+  background-color: var(--Cyan);
+  cursor: pointer;
+}
+.expenses .money {
+  display: none;
+  position: absolute;
+  top: 0%;
+  transform: translate(-20%, -110%);
+  background-color: var(--Darkbrown);
+  color: var(--Very-pale-orange);
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 0.3em;
+}
+.expenses .day {
+  font-size: 12px;
+  opacity: 0.7;
+  text-align: center;
+}
+.expenses .bar {
+  width: 1.7em;
+  height: 100%;
+  background-color: var(--Sred);
+  border-radius: 0.2em;
+}
+/* Done */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1em;
+  color: var(--Darkbrown);
+}
+footer .value {
+  font-size: 2em;
+  font-weight: bold;
+}
+footer .period {
+  font-size: 13px;
+  opacity: 0.7;
+}
+footer .last .plus {
+  font-weight: bold;
+  font-size: 13px;
+  text-align: end;
+}
+/* Done */
+
+/* Font */
+@font-face {
+  font-family: 'DM-sans-r';
+  src: url('/Font/DMSans-Regular.ttf');
+}
+@font-face {
+  font-family: 'DM-sans-b';
+  src: url('/Font/DMSans-Bold.ttf');
+}
