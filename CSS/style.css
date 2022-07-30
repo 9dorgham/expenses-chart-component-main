@@ -98,6 +98,9 @@ body {
   background-color: var(--Sred);
   border-radius: 0.2em;
 }
+.expenses .bar.special {
+  background-color: var(--Cyan);
+}
 /* Done */
 
 footer {

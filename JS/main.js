@@ -52,7 +52,15 @@ function create(ob) {
     }
     static.onmouseleave = () => {
       money.style.display= 'none';
-    } 
+    }
+    
+
+    // kinda promise
+    if (static.getAttribute('style') == `height: 100%;`) {
+      static.querySelector('.bar').classList.add('special');
+    }else {
+      console.log(false);
+    }
   }
 }
 
