@@ -1,7 +1,7 @@
 let parent = document.querySelector('.expenses');
 
 async function getData() {
-  let url = "/JS/data.json";
+  let url = "JS/data.json";
   let req = await fetch(url);
   let ob = await req.json();
   create(ob);
