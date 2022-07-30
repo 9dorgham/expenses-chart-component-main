@@ -125,9 +125,9 @@ footer .last .plus {
 /* Font */
 @font-face {
   font-family: 'DM-sans-r';
-  src: url('./Font/DMSans-Regular.ttf');
+  src: url('/Font/DMSans-Regular.ttf');
 }
 @font-face {
   font-family: 'DM-sans-b';
-  src: url('./Font/DMSans-Bold.ttf');
+  src: url('/Font/DMSans-Bold.ttf');
 }
