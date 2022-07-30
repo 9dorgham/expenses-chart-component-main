@@ -1,3 +1,5 @@
+document.body.style.height= `${window.innerHeight}px`;
+
 let parent = document.querySelector('.expenses');
 
 async function getData() {
